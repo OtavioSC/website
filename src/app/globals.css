@@ -8,15 +8,19 @@
   --background-end-rgb: 22, 22, 22;
 }
 
+html {
+  display: block;
+}
+
 body {
-  display: grid;
+  /* display: grid;
   place-items: center;
   grid-template-columns: 1fr;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-end-rgb)); */
+  @apply flex min-h-screen flex-col bg-neutral-900 text-white
+}
+
+section, footer {
+  @apply mx-auto max-w-3xl px-4;
 }
