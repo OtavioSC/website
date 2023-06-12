@@ -21,14 +21,14 @@ export default function Navbar() {
           <ul className="flex flex-row gap-x-12">
             <li className="text-yellow-600 hover:text-yellow-300 duration-75">
               <h1>
-                <Link href="/">OCarmo</Link>
+                <Link href="/">OCARMO</Link>
               </h1>
             </li>
             <li className="hover:text-white duration-75">
-              <Link href="/works">Works</Link>
+              <Link href="/works">WORK</Link>
             </li>
             <li className="hover:text-white duration-75">
-              <Link href="/about">About</Link>
+              <Link href="/about">ABOUT</Link>
             </li>
             <li className="flex flex-row gap-x-2">
               <a href="https://github.com/otaviosc" target="_blank">
