@@ -45,22 +45,6 @@ export default function Navbar() {
                   Blog
                 </Link>
               </li>
-              <li className="flex flex-row gap-x-2">
-                <a
-                  href="https://github.com/otaviosc"
-                  className="hover:text-yellow-600 duration-75"
-                  target="_blank"
-                >
-                  <GithubLogo />
-                </a>
-                <a
-                  href="https://linkedin.com/in/otaviosc"
-                  className="hover:text-yellow-600 duration-75"
-                  target="_blank"
-                >
-                  <LinkedinLogo />
-                </a>
-              </li>
             </ul>
           </div>
           <div className="items-left">
