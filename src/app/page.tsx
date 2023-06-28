@@ -35,7 +35,7 @@ export default function Home() {
       </section>
       <section>
         <samp className="font-bold text-center my-4 inline-block text-goldenrod text-2xl">
-          Some technologies that i code with
+          Technologies that i code with
         </samp>
         <div className="mt-4 flex flex-row gap-4 justify-center">
           {techIcons.map((icon) => {
