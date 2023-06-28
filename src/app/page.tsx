@@ -1,4 +1,7 @@
+import Image from "next/image";
+
 import { Poppins } from "next/font/google";
+import techIcons from "@/assets/icons/icons";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -9,13 +12,44 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center w-full p-24">
       <section className={`${poppins.className} text-white pt-8 pb-6`}>
-        <h1 className={` my-4 inline-block text-goldenrod text-4xl`}>
-          Software Engineer
-        </h1>
-        <p className="my-2 text-lg font-normal">
-          I'm Otávio and this is my website. Here you can see my recent works,
-          blog posts and contributions.
-        </p>
+        <div className="flex flex-row gap-5">
+          <Image
+            src="https://github.com/otaviosc.png"
+            width={150}
+            height={150}
+            className="grayscale border-goldenrod rounded-lg h-30 w-30 object-contain "
+            alt="Personal photo"
+          />
+          <div>
+            <h1
+              className={`font-bold text-center my-4 inline-block text-goldenrod text-4xl`}
+            >
+              Otávio Carmo
+            </h1>
+            <samp className="block my-2 text-xl">
+              Hello Visitor, I'm a Software Engineer born in 🇧🇷 enthusiastic for
+              Computer Science.
+            </samp>
+          </div>
+        </div>
+      </section>
+      <section>
+        <samp className="font-bold text-center my-4 inline-block text-goldenrod text-2xl">
+          Some technologies that i code with
+        </samp>
+        <div className="mt-4 flex flex-row gap-4 justify-center">
+          {techIcons.map((icon) => {
+            return (
+              <Image
+                src={icon.src}
+                width={20}
+                height={20}
+                className="h-12 w-12 grayscale hover:grayscale-0 duration-300 p-1"
+                alt="Typescript icon"
+              />
+            );
+          })}
+        </div>
       </section>
     </main>
   );
