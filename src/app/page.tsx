@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { Poppins } from "next/font/google";
-import techIcons from "@/assets/icons/icons";
+import { socialIcons } from "@/assets/icons/icons";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -31,6 +31,18 @@ export default function Home() {
               Computer Science.
             </samp>
           </div>
+        </div>
+        <div className="flex flex-row gap-4 my-5 justify-center">
+          {socialIcons.map((icon) => {
+            return (
+              <Image
+                key={icon.name}
+                src={icon.src}
+                width={22}
+                alt={icon.name}
+              />
+            );
+          })}
         </div>
       </section>
     </main>

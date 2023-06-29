@@ -3,13 +3,16 @@ import TypescriptIcon from "./typescript.svg";
 import NestIcon from "./nest.svg";
 import NodeIcon from "./node.svg";
 import MeteorIcon from "./meteor.svg";
+import GithubIcon from "./github.svg";
+import LinkedinIcon from "./linkedin.svg";
+import TwitterIcon from "./twitter.svg";
 
 type Icon = {
   name: string;
   src: string;
 };
 
-const techIcons: Icon[] = [
+export const techIcons: Icon[] = [
   {
     name: "React icon",
     src: ReactIcon,
@@ -32,4 +35,17 @@ const techIcons: Icon[] = [
   },
 ];
 
-export default techIcons;
+export const socialIcons: Icon[] = [
+  {
+    name: "Github Icon",
+    src: GithubIcon,
+  },
+  {
+    name: "Linkedin Icon",
+    src: LinkedinIcon,
+  },
+  {
+    name: "Twitter Icon",
+    src: TwitterIcon,
+  },
+];

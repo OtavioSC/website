@@ -1,4 +1,4 @@
-import techIcons from "@/assets/icons/icons";
+import { techIcons } from "@/assets/icons/icons";
 import Image from "next/image";
 
 export default function About() {
@@ -14,12 +14,12 @@ export default function About() {
               {techIcons.map((icon) => {
                 return (
                   <Image
-                    key={icon.src}
+                    key={icon.name}
                     src={icon.src}
                     width={20}
                     height={20}
                     className="h-12 w-12 grayscale hover:grayscale-0 duration-300 p-1"
-                    alt="Typescript icon"
+                    alt={icon.name}
                   />
                 );
               })}
