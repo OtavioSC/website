@@ -33,24 +33,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-        <samp className="font-bold text-center my-4 inline-block text-goldenrod text-2xl">
-          Technologies that i code with
-        </samp>
-        <div className="mt-4 flex flex-row gap-4 justify-center">
-          {techIcons.map((icon) => {
-            return (
-              <Image
-                src={icon.src}
-                width={20}
-                height={20}
-                className="h-12 w-12 grayscale hover:grayscale-0 duration-300 p-1"
-                alt="Typescript icon"
-              />
-            );
-          })}
-        </div>
-      </section>
     </main>
   );
 }
