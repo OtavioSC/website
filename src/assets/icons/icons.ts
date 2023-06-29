@@ -10,6 +10,7 @@ import TwitterIcon from "./twitter.svg";
 type Icon = {
   name: string;
   src: string;
+  target?: string;
 };
 
 export const techIcons: Icon[] = [
@@ -39,13 +40,16 @@ export const socialIcons: Icon[] = [
   {
     name: "Github Icon",
     src: GithubIcon,
+    target: "https://github.com/otaviosc",
   },
   {
     name: "Linkedin Icon",
     src: LinkedinIcon,
+    target: "https://linkedin.com/in/otaviosc",
   },
   {
     name: "Twitter Icon",
     src: TwitterIcon,
+    target: "https://twitter.com/otascar",
   },
 ];

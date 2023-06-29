@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { Poppins } from "next/font/google";
 import { socialIcons } from "@/assets/icons/icons";
+import Link from "next/link";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -34,14 +35,18 @@ export default function Home() {
         </div>
         <div className="flex flex-row gap-4 my-5 justify-center">
           {socialIcons.map((icon) => {
-            return (
-              <Image
-                key={icon.name}
-                src={icon.src}
-                width={22}
-                alt={icon.name}
-              />
-            );
+            if (icon.target) {
+              return (
+                <Link href={icon.target} target="_blank">
+                  <Image
+                    key={icon.name}
+                    src={icon.src}
+                    width={22}
+                    alt={icon.name}
+                  />
+                </Link>
+              );
+            }
           })}
         </div>
       </section>
