@@ -43,9 +43,8 @@ export default function Home() {
           {socialIcons.map((icon) => {
             if (icon.target) {
               return (
-                <Link href={icon.target} target="_blank">
+                <Link key={icon.id} href={icon.target} target="_blank">
                   <Image
-                    key={icon.name}
                     src={icon.src}
                     width={35}
                     alt={icon.name}

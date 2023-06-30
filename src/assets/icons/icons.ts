@@ -8,6 +8,7 @@ import LinkedinIcon from "./linkedin.svg";
 import TwitterIcon from "./twitter.svg";
 
 type Icon = {
+  id?: number;
   name: string;
   src: string;
   target?: string;
@@ -38,16 +39,19 @@ export const techIcons: Icon[] = [
 
 export const socialIcons: Icon[] = [
   {
+    id: 1,
     name: "Github Icon",
     src: GithubIcon,
     target: "https://github.com/otaviosc",
   },
   {
+    id: 2,
     name: "Linkedin Icon",
     src: LinkedinIcon,
     target: "https://linkedin.com/in/otaviosc",
   },
   {
+    id: 3,
     name: "Twitter Icon",
     src: TwitterIcon,
     target: "https://twitter.com/otascar",
