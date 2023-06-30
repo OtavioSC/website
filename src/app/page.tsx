@@ -12,13 +12,19 @@ const poppins = Poppins({
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center w-full p-24">
-      <section className={`${poppins.className} text-white pt-8 pb-6`}>
-        <div className="flex flex-row gap-5">
+      <section
+        className={`${poppins.className} text-white pt-8 pb-6 border border-sb bg-[#141414] rounded-xl backdrop-opacity-10`}
+      >
+        <div className="absolute top-0 -left-4 w-72 h-72 bg-goldenrod rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob"></div>
+        <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-600 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-goldenrod rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-3000"></div>
+        <div className="absolute -bottom-8 -right-4 w-72 h-72 bg-goldenrod rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-4000"></div>
+        <div className="flex flex-row gap-5 p-8">
           <Image
             src="https://github.com/otaviosc.png"
             width={150}
             height={150}
-            className="grayscale border-goldenrod rounded-lg h-30 w-30 object-contain "
+            className="grayscale rounded-lg h-30 w-30 object-contain border border-sb"
             alt="Personal photo"
           />
           <div>
@@ -27,10 +33,10 @@ export default function Home() {
             >
               Otávio Carmo
             </h1>
-            <samp className="block my-2 text-xl">
-              Hello Visitor, I'm a Software Engineer born in 🇧🇷 enthusiastic for
-              Computer Science.
-            </samp>
+            <p className="block my-2 text-xl">
+              Software Engineer born in 🇧🇷 and enthusiastic for Computer
+              Science.
+            </p>
           </div>
         </div>
         <div className="flex flex-row gap-4 my-5 justify-center">
@@ -41,8 +47,9 @@ export default function Home() {
                   <Image
                     key={icon.name}
                     src={icon.src}
-                    width={22}
+                    width={38}
                     alt={icon.name}
+                    className="p-2 hover:-translate-y-2 duration-150"
                   />
                 </Link>
               );

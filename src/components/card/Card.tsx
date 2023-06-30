@@ -1,7 +1,7 @@
 export default function Card() {
   return (
-    <div className="h-50 min-h-max bg-zinc-800 align-center justify-center rounded">
-      <div className="p-8 flex flex-col gap-2 my-5">
+    <div className="h-50 min-h-max align-center justify-center rounded ">
+      <div className="p-8 flex flex-col gap-2 my-5 border border-sb bg-[#141414]">
         <h2 className="text-2xl font-bold">Work</h2>
         <samp>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nisi
