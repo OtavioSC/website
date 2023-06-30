@@ -11,14 +11,14 @@ const poppins = Poppins({
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center w-full p-24">
+    <main className="flex min-h-screen flex-col items-center justify-center w-full p-24 backdrop-opacity-10">
+      <div className="absolute top-150 left-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob"></div>
+      <div className="absolute top-110 right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-2000"></div>
+      <div className="absolute top-130 left-50 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-3000"></div>
+      <div className="absolute bottom-50 right-20 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-4000"></div>
       <section
-        className={`${poppins.className} text-white pt-8 pb-6 border border-sb bg-[#141414] rounded-xl backdrop-opacity-10`}
+        className={`${poppins.className} text-white pt-8 pb-6 border border-sb bg-[#141414] rounded-xl`}
       >
-        <div className="absolute top-0 -left-4 w-72 h-72 bg-goldenrod rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob"></div>
-        <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-600 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-2000"></div>
-        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-goldenrod rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-3000"></div>
-        <div className="absolute -bottom-8 -right-4 w-72 h-72 bg-goldenrod rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-4000"></div>
         <div className="flex flex-row gap-5 p-8">
           <Image
             src="https://github.com/otaviosc.png"
@@ -33,13 +33,13 @@ export default function Home() {
             >
               Otávio Carmo
             </h1>
-            <p className="block my-2 text-xl">
-              Software Engineer born in 🇧🇷 and enthusiastic for Computer
-              Science.
+            <p className="my-2 text-xl line-clamp-3">
+              Software Engineer borned in 🇧🇷 and enthusiastic for Computer
+              Science stuffs.
             </p>
           </div>
         </div>
-        <div className="flex flex-row gap-4 my-5 justify-center">
+        <div className="flex flex-row gap-2 my-2 justify-center">
           {socialIcons.map((icon) => {
             if (icon.target) {
               return (
@@ -47,7 +47,7 @@ export default function Home() {
                   <Image
                     key={icon.name}
                     src={icon.src}
-                    width={38}
+                    width={35}
                     alt={icon.name}
                     className="p-2 hover:-translate-y-2 duration-150"
                   />

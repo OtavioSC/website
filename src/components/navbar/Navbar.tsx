@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="flex w-full items-center justify-between py-4 sm:items-right sm:justify-center">
         <div className="text-xl hidden sm:block">
           <ul className="flex flex-row gap-x-10 font-bold w-full">
-            <li className="text-yellow-600 hover:text-yellow-300 duration-75">
+            <li className=" hover:text-yellow-600 duration-75">
               <Link href="/" className="p-1 sm:p-3">
                 <samp>Home</samp>
               </Link>
