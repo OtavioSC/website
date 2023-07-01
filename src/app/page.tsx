@@ -12,14 +12,10 @@ const poppins = Poppins({
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center md:items-left justify-center w-full p-8 md:p-24 backdrop-opacity-10">
-      <div className="absolute top-150 left-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob"></div>
-      <div className="absolute top-110 right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-2000"></div>
-      <div className="absolute top-130 left-50 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-3000"></div>
-      <div className="absolute bottom-50 right-20 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-4000"></div>
       <section
-        className={`${poppins.className} text-center md:text-left text-white pt-8 pb-4 border border-sb bg-[#141414] rounded-xl`}
+        className={`${poppins.className} text-center md:text-left text-white pt-8 pb-4 border border-sb bg-[#141414] rounded-xl drop-shadow-lg max-w-2xl`}
       >
-        <div className="flex flex-col items-center md:flex-row gap-4 p-3">
+        <div className="flex flex-col items-center md:flex-row gap-6 p-7">
           <Image
             src="https://github.com/otaviosc.png"
             width={150}
@@ -29,17 +25,17 @@ export default function Home() {
           />
           <div>
             <h1
-              className={`font-bold text-center my-4 inline-block text-goldenrod text-2xl md:text-4xl`}
+              className={`font-bold text-center my-2 inline-block text-goldenrod text-2xl md:text-4xl animate-pulse duration-75`}
             >
               Otávio Carmo
             </h1>
-            <p className="my-2 text-sm md:text-xl line-clamp-3">
-              Software Engineer borned in 🇧🇷 and enthusiastic for Computer
-              Science stuffs.
+            <p className="my-2 mx-4 md:mx-0 text-lg md:text-xl md:line-clamp-2">
+              Software Engineer born in Brazil and enthusiastic about Computer
+              Science stuff.
             </p>
           </div>
         </div>
-        <div className="flex flex-row gap-2 justify-center">
+        <div className="flex flex-row gap-2 justify-center items-center">
           {socialIcons.map((icon) => {
             if (icon.target) {
               return (
@@ -48,7 +44,7 @@ export default function Home() {
                     src={icon.src}
                     width={35}
                     alt={icon.name}
-                    className="w-9 md:w-15 p-2 hover:-translate-y-2 duration-150"
+                    className="w-10 md:w-15 p-2 hover:-translate-y-2 duration-200"
                   />
                 </Link>
               );
