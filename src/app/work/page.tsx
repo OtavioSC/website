@@ -18,7 +18,6 @@ export default function Work() {
           Most recent work
         </h1>
         {works.map((work, index) => {
-          console.log(work);
           return (
             <Card
               key={index}
