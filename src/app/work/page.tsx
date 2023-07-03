@@ -1,6 +1,4 @@
 import Card from "@/components/card/Card";
-import { techIcons } from "@/assets/icons/icons";
-import Image from "next/image";
 import { Work, WorkContent } from "../types/types";
 import { getAllWorks } from "@/lib/api";
 
@@ -19,10 +17,11 @@ export default function Work() {
         >
           Most recent work
         </h1>
-        {works.map((work) => {
+        {works.map((work, index) => {
           console.log(work);
           return (
             <Card
+              key={index}
               title={work.title}
               author={work.author}
               description={work.description}
