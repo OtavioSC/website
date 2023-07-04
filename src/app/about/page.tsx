@@ -28,16 +28,15 @@ export default async function About() {
         <h2 className="font-bold text-center my-4 inline-block text-goldenrod text-2xl sm:text-4xl">
           Career Timeline
         </h2>
-        {jobs.map((job) => {
+        {jobs.map((job, index) => {
           return (
-            <>
-              <TimelineCard
-                role={job.role}
-                company={job.company}
-                description={job.description}
-                period={job.period}
-              />
-            </>
+            <TimelineCard
+              key={index}
+              role={job.role}
+              company={job.company}
+              description={job.description}
+              period={job.period}
+            />
           );
         })}
       </section>
