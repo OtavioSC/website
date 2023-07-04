@@ -1,7 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import MobileNav from "../navMobile/NavMobile";
 
 export default function Navbar() {
   return (
