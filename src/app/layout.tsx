@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="mx-auto max-w-4xl xl:max-w-5xl bg-dark min-h-screen overscroll-y-none">
+      <body className="mx-auto max-w-4xl bg-dark min-h-screen overscroll-y-none">
         <Navbar />
         <main>{children}</main>
       </body>
