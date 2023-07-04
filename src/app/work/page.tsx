@@ -11,9 +11,9 @@ export default function Work() {
         <h1
           className={`font-bold text-center my-4 inline-block text-goldenrod text-2xl sm:text-4xl`}
         >
-          Most recent work
+          Under construction...
         </h1>
-        {works.map((work, index) => {
+        {/* {works.map((work, index) => {
           return (
             <Card
               key={index}
@@ -22,7 +22,7 @@ export default function Work() {
               description={work.description}
             />
           );
-        })}
+        })} */}
       </section>
     </main>
   );
