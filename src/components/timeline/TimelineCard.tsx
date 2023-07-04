@@ -11,7 +11,7 @@ export default function TimelineCard(job: Job) {
     <div
       className={`flex flex-col gap-3 my-5 border border-sb rounded bg-[#141414] mt-6 sm:mt-8 p-4 sm:p-10 ${poppins.className}`}
     >
-      <h2 className="text-lg sm:text-2xl font-bold text-center text-goldenrod">
+      <h2 className="text-lg sm:text-xl font-bold text-center text-goldenrod">
         {job.role}
       </h2>
       <div className="flex flex-col gap-1">
