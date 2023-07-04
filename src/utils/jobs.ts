@@ -5,7 +5,7 @@ export const jobs: Job[] = [
     role: "Full Stack Developer",
     company: "Diel Energia",
     description:
-      "As a full stack developer, my role involves ensuring the development, testing, and documentation of software solutions. I have successfully implemented improvements in various areas, including a Device Simulator tool for testing and simulating hardware products. I also enhanced the Notification Service by optimizing its performance, reliability, and scalability, and introducing custom notifications based on specific criteria or thresholds. Additionally, I improved the Faults Detection Rust Application, addressing limitations and adding features for better fault detection, analysis, and reporting. Throughout my work, I conducted thorough testing, documented functionalities and usage guidelines, and implemented Storybook for Frontend component documentation. Collaboration, code reviews, and adherence to best practices were integral parts of my responsibilities.",
+      "As a full stack developer, my role involves ensuring the development, testing, and documentation of software solutions. Additionally, I improved the Faults Detection Rust Application, addressing limitations and adding features for better fault detection, analysis, and reporting. Throughout my work, I conducted thorough testing, documented functionalities and usage guidelines, and implemented Storybook for Frontend component documentation.",
     period: "August 2022 - January 2023",
   },
   {
