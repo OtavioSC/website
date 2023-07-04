@@ -7,9 +7,9 @@ export default function Card({ title, author, description }: WorkContent) {
   return (
     <div className="grid sm:flex h-50 min-h-max justify-center md:text-left text-white drop-shadow-lg max-w-content rounded-xl">
       <div className="p-8 flex flex-col gap-3 my-5 border border-sb bg-[#141414]">
-        <h2 className="text-2xl font-bold">{title}</h2>
-        <samp className="mt-3 hidden sm:block">{description}</samp>
-        <div className="flex flex-row gap-5 justify-center items-center ">
+        <h2 className="text-lg sm:text-2xl font-bold text-center">{title}</h2>
+        <samp className="mt-3 hidden sm:block text-center">{description}</samp>
+        <div className="flex flex-col sm:flex-row gap-5 justify-center items-center mt-4">
           <Link href="https://github.com/otaviosc" target="_blank">
             <Image
               src={GithubIcon}

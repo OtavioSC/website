@@ -3,8 +3,12 @@ title: "About me"
 author: "Otavio Carmo"
 ---
 
-Born in Brazil 🇧🇷 , I always had the dream of being a soccer player like a lot of kids, but it was a goal I could not achieve. When I was 17, I initiated a technical programming course that changed my future perspectives. I fell in love with this world of infinite possibilities, which allowed me to evolve as a person and developer.
+Born in Brazil, I had a goal of being a soccer player like most part kids, but it was a goal I could not achieve. At that time, I had a passion in parallel was create designs for a Video Game Forum and developing mods for FPS games.
 
-In this short period, I did create many projects and have had experience in technologies like RPA, Salesforce, IoT, and IA, which could prepare me for different challenges in my developer career. If you want to know about some of these projects, you can access my [portfolio website](https://ocarmo.dev) and my [digital garden](https://knowledge.ocarmo.dev), which are locals where I like to share practical examples and notes.
+So when I was 17, almost finishing high school, I initiated a technical programming course even without knowing what I would choose as my graduation. I didn't know that was the best choice that I could make.
 
-In 2022, I graduated from my dream university, where I met amazing professionals, developed an AI to help teenagers, and showed it to investors at a big event.
+There, I met languages like C# and Javascript and had experience with technologies such as Arduino, not to mention the countless people who helped me to improve as Developer.
+
+Given the moment I needed to choose an undergraduate course, I've already known that anything with programming would be the best choice.
+
+At college, I retrospect some code best practices and learning new technologies, focusing on frameworks like React.js, Spring, and . NET. I also saw areas like AI, security, DevOps, Mobile Development, and others. In this academic journey, I developed projects like AI Face Detection, a Mobile app with Chatbot to help anxious teenagers, API, and several others that gave me incredible experiences.
