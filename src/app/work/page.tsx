@@ -2,10 +2,6 @@ import Card from "@/components/card/Card";
 import { Work, WorkContent } from "../types/types";
 import { getAllWorks } from "@/lib/api";
 
-type Props = {
-  allWorks: WorkContent[];
-};
-
 export default function Work() {
   const works = getAllWorks(["title", "author", "description"]);
 

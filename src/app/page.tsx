@@ -24,9 +24,7 @@ export default function Home() {
             alt="Personal photo"
           />
           <div>
-            <h1
-              className={`font-bold text-center my-2 inline-block text-goldenrod text-2xl md:text-4xl animate-pulse duration-75`}
-            >
+            <h1 className="font-bold text-center my-2 inline-block text-goldenrod text-2xl md:text-4xl animate-pulse duration-75">
               Otávio Carmo
             </h1>
             <p className="my-2 mx-4 md:mx-0 text-lg md:text-xl md:line-clamp-2">
