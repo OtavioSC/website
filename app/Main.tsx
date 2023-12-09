@@ -3,24 +3,12 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
 
-import { Authors, allAuthors } from 'contentlayer/generated'
-import { MDXLayoutRenderer } from 'pliny/mdx-components'
-import AuthorLayout from '@/layouts/AuthorLayout'
-import { coreContent } from 'pliny/utils/contentlayer'
-
 const MAX_DISPLAY = 3
 
 export default function Home({ posts }) {
-  const author = allAuthors.find((p) => p.slug === 'default') as Authors
-  const mainContent = coreContent(author)
   return (
     <>
       <div className="">
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <AuthorLayout content={mainContent} description={false}>
-            <MDXLayoutRenderer code={author.body.code} />
-          </AuthorLayout>
-        </div>
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
             Latest Posts
