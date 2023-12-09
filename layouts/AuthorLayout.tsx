@@ -17,7 +17,7 @@ export default function AuthorLayout({ children, content, description }: Props) 
   return (
     <>
       <div className="divide-y divide-dashed divide-gray-200 dark:divide-gray-700">
-        <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
+        <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-20">
           <div className="flex flex-col items-center space-x-2 pt-8">
             <Image
               src={profileImage}
@@ -37,7 +37,7 @@ export default function AuthorLayout({ children, content, description }: Props) 
             </div>
           </div>
           {description && (
-            <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2">
+            <div className="prose max-w-none pb-8 pt-8 text-justify dark:prose-invert xl:col-span-2 xl:text-lg">
               {children}
             </div>
           )}
