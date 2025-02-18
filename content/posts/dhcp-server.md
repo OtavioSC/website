@@ -11,4 +11,3 @@ To really understand something, you need to build.
 - [What is DHCP?](#what-is-dhcp)
 
 ## What is DHCP?
-

@@ -1,8 +1,20 @@
 sectionPagesMenu = 'main'
 
 [[entries]]
-title = "profile"
-url = "about"
+title = "info"
+	[[entries.entries]]
+	title = "Otávio Carmo"
+
+	[[entries.entries]]
+	title = "AppSec Engineer At Avenue"
+
+	[[entries.entries]]
+	title = "Github"
+	url = "https://github.com/otaviosc"
+
+	[[entries.entries]]
+	title = "Linkedin"
+	url = "https://www.linkedin.com/in/otaviosc/"
 
 [[entries]]
 title = "all posts"
